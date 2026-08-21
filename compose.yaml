@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: worklane-postgres
+    environment:
+      POSTGRES_DB: worklane
+      POSTGRES_USER: worklane
+      POSTGRES_PASSWORD: worklane
+    ports:
+      - "5432:5432"
+    volumes:
+      - worklane_pgdata:/var/lib/postgresql/data
+
+volumes:
+  worklane_pgdata:
