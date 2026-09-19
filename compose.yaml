@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: worklane
       POSTGRES_PASSWORD: worklane
     ports:
-      - "5432:5432"
+      - "5435:5432"
     volumes:
       - worklane_pgdata:/var/lib/postgresql/data
 
